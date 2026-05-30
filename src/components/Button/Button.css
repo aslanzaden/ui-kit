@@ -1,0 +1,103 @@
+/* Button base */
+.custom-button {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 150ms ease, background-color 150ms ease, color 150ms ease;
+  white-space: nowrap;
+}
+
+.custom-button.auto-resize {
+  width: 100%;
+}
+
+/* Slots */
+.custom-button__left,
+.custom-button__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.custom-button__center {
+  width: 100%;
+  text-align: center;
+}
+
+/* Modes */
+.custom-button.main {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.custom-button.main:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.custom-button.main-danger {
+  background-color: var(--destructive);
+  color: var(--destructive-foreground);
+}
+
+.custom-button.secondary {
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+  border: 1px solid var(--border);
+}
+
+.custom-button.secondary:hover:not(:disabled) {
+  background-color: var(--accent);
+}
+
+.custom-button.text {
+  background-color: transparent;
+  color: var(--foreground);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.custom-button.text:hover:not(:disabled) {
+  opacity: 0.7;
+}
+
+.custom-button.url {
+  background-color: transparent;
+  color: var(--primary);
+  text-decoration: underline;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.custom-button.danger {
+  background-color: transparent;
+  color: var(--destructive);
+  border: 1px solid var(--destructive);
+}
+
+.custom-button.danger:hover:not(:disabled) {
+  background-color: var(--destructive);
+  color: var(--destructive-foreground);
+}
+
+/* Disabled */
+.custom-button:disabled,
+.custom-button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Loading */
+.custom-button.loading {
+  background-color: var(--accent);
+  cursor: progress;
+  color: transparent;
+}
