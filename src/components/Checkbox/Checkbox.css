@@ -1,0 +1,33 @@
+.checkbox-component {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0.25rem 0;
+  gap: 10px;
+}
+
+.checkbox-component input[type='checkbox'] {
+  accent-color: var(--primary, #6366f1);
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 2px solid var(--foreground, #374151);
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.checkbox-component label.checkbox-label {
+  font-size: 0.9rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-component.disabled label {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.checkbox-component.disabled input[type='checkbox'] {
+  cursor: not-allowed;
+}

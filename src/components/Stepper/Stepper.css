@@ -1,0 +1,65 @@
+.app-stepper {
+  display: flex;
+  gap: var(--spacing-5, 20px);
+  padding: var(--spacing-8, 32px) var(--spacing-4, 16px);
+  border-bottom: var(--border-width-1, 1px) solid var(--border, #e5e7eb);
+}
+
+/* ── Step ───────────────────────────────────────────────── */
+.app-stepper__step {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3, 12px);
+}
+
+/* ── Step number bubble ─────────────────────────────────── */
+.app-stepper__step-number {
+  width: var(--width-9, 36px);
+  height: var(--height-9, 36px);
+  border-radius: var(--border-radius-lg, 0.5rem);
+  background-color: var(--accent, #f3f4f6);
+  color: var(--accent-foreground, #374151);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xs, 10px);
+  font-weight: var(--font-weight-normal, 400);
+  flex-shrink: 0;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Active overrides */
+.app-stepper__step--active .app-stepper__step-number {
+  background-color: var(--primary, #6366f1);
+  color: var(--accent, #fff);
+}
+
+/* ── Step info ──────────────────────────────────────────── */
+.app-stepper__step-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  font-size: var(--font-size-xs, 10px);
+  color: var(--muted-foreground, #9ca3af);
+  transition: color 0.2s ease;
+}
+
+.app-stepper__step--active .app-stepper__step-info {
+  color: var(--foreground, #111827);
+}
+
+.app-stepper__step-title {
+  font-weight: var(--font-weight-normal, 400);
+}
+
+.app-stepper__step-subtitle {
+  font-weight: var(--font-weight-semibold, 600);
+}
+
+/* ── Icon placeholder ───────────────────────────────────── */
+.stepper-icon {
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
