@@ -1,0 +1,19 @@
+{
+  "components.table.search_placeholder": "Search...",
+  "components.table.add": "Add",
+  "components.table.no_data": "No data",
+  "components.table.actions_empty": "No actions",
+  "components.table.selected": "selected",
+  "components.table.selection_info": "{{selected}} of {{total}} selected",
+  "components.table.rows_per_page": "Rows per page",
+  "components.table.page_info": "Page {{current}} of {{total}}",
+  "components.table.clear_selection": "Clear selection",
+  "components.table.truthy": "Yes",
+  "components.table.falsy": "No",
+  "error": "Error",
+  "warn": "Warning",
+  "success": "Success",
+  "info": "Info",
+  "close": "Close",
+  "no_info": "No info"
+}

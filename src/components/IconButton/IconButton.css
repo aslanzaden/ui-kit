@@ -1,0 +1,44 @@
+.icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  aspect-ratio: 1 / 1;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 150ms ease;
+  border-radius: var(--border-radius-md, 0.375rem);
+  border: 1px solid var(--input, #e4e4e7);
+  background: var(--background, #ffffff);
+  box-shadow: none;
+}
+
+.icon-button--sm {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-button--md {
+  width: 32px;
+  height: 32px;
+}
+
+.icon-button--lg {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-button:focus,
+.icon-button:focus-visible {
+  outline: none;
+}
+
+.icon-button:active {
+  opacity: 1;
+  box-shadow: none;
+}
+
+.icon-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

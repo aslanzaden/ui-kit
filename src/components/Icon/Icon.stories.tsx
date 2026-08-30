@@ -8,7 +8,26 @@ const meta: Meta<typeof Icon> = {
   argTypes: {
     iconName: {
       control: 'select',
-      options: ['ArrowRight'],
+      options: [
+        'ArrowRight',
+        'Eye',
+        'EyeOff',
+        'ChevronUp',
+        'ChevronDown',
+        'ChevronLeft',
+        'ChevronRight',
+        'ChevronsLeft',
+        'ChevronsRight',
+        'Close',
+        'CircleX',
+        'CircleAlert',
+        'CircleCheck',
+        'CircleHelp',
+        'CircleMinus',
+        'CirclePlus',
+        'Ellipsis',
+        'Columns3',
+      ],
     },
     color: {
       control: 'select',

@@ -35,8 +35,8 @@
 
 /* Modes */
 .custom-button.main {
-  background-color: var(--primary);
-  color: var(--primary-foreground);
+  background-color: var(--primary, #0b3994);
+  color: var(--primary-foreground, #fafafa);
 }
 
 .custom-button.main:hover:not(:disabled) {
@@ -44,23 +44,23 @@
 }
 
 .custom-button.main-danger {
-  background-color: var(--destructive);
-  color: var(--destructive-foreground);
+  background-color: var(--destructive, #dc2626);
+  color: var(--destructive-foreground, #fef2f2);
 }
 
 .custom-button.secondary {
-  background-color: var(--secondary);
-  color: var(--secondary-foreground);
-  border: 1px solid var(--border);
+  background-color: var(--secondary, #f4f4f5);
+  color: var(--secondary-foreground, #18181b);
+  border: 1px solid var(--border, #e4e4e7);
 }
 
 .custom-button.secondary:hover:not(:disabled) {
-  background-color: var(--accent);
+  background-color: var(--accent, #f4f4f5);
 }
 
 .custom-button.text {
   background-color: transparent;
-  color: var(--foreground);
+  color: var(--foreground, #18181b);
   padding-left: 0;
   padding-right: 0;
 }
@@ -71,7 +71,7 @@
 
 .custom-button.url {
   background-color: transparent;
-  color: var(--primary);
+  color: var(--primary, #0b3994);
   text-decoration: underline;
   padding-left: 0;
   padding-right: 0;
@@ -79,13 +79,13 @@
 
 .custom-button.danger {
   background-color: transparent;
-  color: var(--destructive);
-  border: 1px solid var(--destructive);
+  color: var(--destructive, #dc2626);
+  border: 1px solid var(--destructive, #dc2626);
 }
 
 .custom-button.danger:hover:not(:disabled) {
-  background-color: var(--destructive);
-  color: var(--destructive-foreground);
+  background-color: var(--destructive, #dc2626);
+  color: var(--destructive-foreground, #fef2f2);
 }
 
 /* Disabled */
@@ -97,7 +97,7 @@
 
 /* Loading */
 .custom-button.loading {
-  background-color: var(--accent);
+  background-color: var(--accent, #f4f4f5);
   cursor: progress;
   color: transparent;
 }

@@ -1,4 +1,4 @@
-import { type CSSProperties, type ReactNode } from 'react';
+import { type CSSProperties, type MouseEvent, type ReactNode } from 'react';
 import { Icon } from '../Icon/Icon';
 import type { IconsTypes } from '../../constants/icons';
 import type { TypeColorKeys } from '../../constants/colors';
@@ -22,7 +22,7 @@ export interface ButtonProps {
   mode?: ButtonMode;
   iconColor?: TypeColorKeys;
   autoResize?: boolean;
-  onClick?: () => void;
+  onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
   className?: string;
   style?: CSSProperties;
 }
