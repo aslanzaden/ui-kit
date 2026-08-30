@@ -2,7 +2,7 @@
 
 A React + TypeScript UI component library, developed with Storybook.
 
-**Live Storybook docs:** hosted on [Chromatic](https://www.chromatic.com/) — see the repo's Chromatic project page for the current published URL.
+**Live Storybook docs:** https://aslanzaden.github.io/ui-kit
 
 ## Installation
 
